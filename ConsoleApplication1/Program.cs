@@ -12,14 +12,24 @@ namespace ConsoleApplication1
         {
             //convert array of integers into string, then concat string
             //int[] numArr = {0,1,2,3,4,5};
-            //var arr = string.Join(",", numArr);
+            //var variable = string.Join(",", numArr);
 
             //convert array on char to string, then concats string
             //char[] charArr = { 'a', 'b', 'c' };
-            //var arr = new String(charArr);
+            //var variable = new String(charArr);
 
+            //chaining methods
+            //char[] charArr = { 'a', 'b', 'c' };
+            //var variable = new String(charArr).ToUpper();
 
-            Console.WriteLine("the array values: " + arr);
+            StringBuilder variable = new StringBuilder();
+
+            variable.Append("Is this")
+                .Append("really ")
+                .Append("going to ")
+                .Append("work")
+                .Append("?!");
+            Console.WriteLine("the string value: " + variable);
             Console.ReadKey();
         }
     }
