@@ -22,14 +22,20 @@ namespace ConsoleApplication1
             //char[] charArr = { 'a', 'b', 'c' };
             //var variable = new String(charArr).ToUpper();
 
-            StringBuilder variable = new StringBuilder();
+            //StringBuilder variable = new StringBuilder();
+            //variable.Append("Is this ")
+            //    .Append("really ")
+            //    .Append("going to ")
+            //    .Append("work")
+            //    .Append("?!");
 
-            variable.Append("Is this")
-                .Append("really ")
-                .Append("going to ")
-                .Append("work")
-                .Append("?!");
+            //parses string and converts it to integer
+            string newString = "2234";
+            int variable = Int32.Parse(newString);
+            int doubled = variable * 2;
+
             Console.WriteLine("the string value: " + variable);
+            Console.WriteLine("the string value: " + doubled);
             Console.ReadKey();
         }
     }
